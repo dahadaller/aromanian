@@ -6,7 +6,7 @@ class DownloadPage extends Component {
     render() {
         const dp = ( 
         <div>
-        <Navbar inverse collapseOnSelect>
+        <Navbar collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#brand">React-Bootstrap</a>
@@ -40,7 +40,6 @@ class DownloadPage extends Component {
           </Navbar.Collapse>
         </Navbar>
         
-        <Jumbotron>
         <Grid>
             <Row>
                 <Col md={6}>
@@ -48,34 +47,33 @@ class DownloadPage extends Component {
                 </Col>
                 <Col md={6}>
                     <Row>
-                        <Col md={6}>
+                        <Col md={12}>
                            <h2>De La Romanii Din Turcia Europeana:</h2><br/><h4>Studiu Etic Si Statistic Aspura Armanilor</h4>{ /*title (will need to be routed to database later on)*/}
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={6}>
+                        <Col md={12}>
                             <p>by Ioan Nenitescu</p>{ /*by author (will need to be routed to database later on)*/}
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={6}>
+                        <Col md={12}>
                             <p>The title translates to "get translation from sana". It's an ethography or a cultural study of the vlach people written in 1895. Its n out-of-print book that, for the first time in over one hundred ears will be published once again. This time online, for th whole world to access.</p>{ /*description (will need to be routed to database later on)*/}
                         </Col>
                     </Row>            
                     <Row>
-                        <Col md={6}>
+                        <Col md={12}>
                             <p>test</p>{ /*Donation Amount (stripe api)*/}
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={6}>
+                        <Col md={12}>
                             <Button bsStyle="primary">Download</Button>{ /*<Button bsStyle="primary">Default button</Button>  (will need to be routed to database later on)*/}
                         </Col>
                     </Row>                                 
                 </Col>
             </Row>
         </Grid>
-        </Jumbotron>
         </div>
         );
         return(dp);
