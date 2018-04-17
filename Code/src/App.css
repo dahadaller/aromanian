@@ -1,28 +1,82 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:500i|Cormorant:600|Vollkorn:600&subset=cyrillic,cyrillic-ext,greek,latin-ext');
+
+/**  Basic Page CSS **/
+body{
+  font-family: 'Vollkorn', serif;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant', serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+
+/**  Header Navigation **/
+header .navbar-default {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
-.App-title {
-  font-size: 1.5em;
+header .navbar-default .navbar-nav a {
+  color: black;
 }
 
-.App-intro {
-  font-size: large;
+header .navbar-default .navbar-nav a:hover {
+  color: #990100;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/**  Navbar Brand **/
+header .navbar-brand {
+  padding: 0 0 0 0;
 }
+
+header .navbar-brand h1 {
+  color: #990100;
+  font-size: 1.8em;
+}
+
+header .navbar-brand h1:hover {
+  border-bottom: 2px solid #990100;
+}
+
+/** Download-Page Content **/
+.byline {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 23px;
+}
+
+#description{
+  padding-top: 30px;
+  display: block;
+  float: left;
+}
+
+#wallpaper {
+  background: url(https://www.thelonelytraveler.org/wp-content/uploads/2016/07/20160507_171102.jpg) no-repeat center center;
+  background-size: cover;
+}
+#book {
+  background-color: rgba(255,255,255,.75);
+}
+
+#bookimg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  float: right;
+  border-radius: 20px;
+}
+
+form .form-inline {
+    color: black;
+    background-color: blue;
+}
+
